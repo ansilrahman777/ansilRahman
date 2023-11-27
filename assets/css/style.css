@@ -11,7 +11,9 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  /* color: #272829; */
+  color: rgb(160, 160, 160);
+  background-color: rgb(15,15,15);
 }
 
 a {
@@ -52,13 +54,13 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: #e2e2e2;
   line-height: 0;
 }
 
 .back-to-top:hover {
   background: #0678e3;
-  color: #fff;
+  color: #d3d1d1;
 }
 
 .back-to-top.active {
@@ -275,7 +277,12 @@ h6 {
   width: 100%;
   height: 100vh;
   background: url("../img/hero-bg.AVIF") top right no-repeat;
+  /* background-size: cover;
+  position: relative; */
+  background-position: top center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
 }
 
@@ -293,6 +300,8 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
+  background-image: linear-gradient(180deg,transparent,rgba(0, 0, 0, 0.1),rgb(15,15,15));
+
 }
 
 #hero h1 {
@@ -300,11 +309,11 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: #ffffff;
 }
 
 #hero p {
-  color: #45505b;
+  color: #ffffff;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -322,7 +331,7 @@ h6 {
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #45505b;
+  color: rgb(15,15,15);
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
@@ -369,7 +378,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  color: #ffffff;
 }
 
 .section-title h2::before {
@@ -442,7 +451,8 @@ section {
   width: 100%;
   position: relative;
   text-align: center;
-  background: #fff;
+  color: white;
+  background-color: rgb(15,15,15);
 }
 
 .facts .count-box i {
@@ -451,7 +461,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #0563bb;
+  background: #1c4b77;
   color: #fff;
   border-radius: 50px;
   display: inline-flex;
@@ -465,7 +475,7 @@ section {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #011426;
+  color: #ffffff;
 }
 
 .facts .count-box p {
@@ -519,7 +529,7 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: #ffffff;
 }
 
 .resume .resume-item {
@@ -535,13 +545,13 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #0563bb;
+  color: #dfdfdf;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #f7f8f9;
+  background: rgb(15,15,15);
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -801,11 +811,13 @@ h6 {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
+  margin-top: 25px;
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+  background: rgb(0, 0, 0);
+  box-shadow: 0px -5px 45px 0px rgba(185, 208, 223, 0.08);
+  
 }
 
 .services .icon-box .icon {
@@ -843,7 +855,7 @@ h6 {
 }
 
 .services .icon-box h4 a {
-  color: #45505b;
+  color: #ffffff;
   transition: ease-in-out 0.3s;
 }
 
@@ -855,7 +867,8 @@ h6 {
 
 .services .icon-box:hover {
   border-color: #fff;
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0 35px 0 rgba(255, 255, 255, 0.08);
+  transform: scale(1.1);
 }
 
 .services .iconbox-blue i {
@@ -957,12 +970,12 @@ h6 {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: rgb(255, 255, 255);
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: #ffffff;
   margin: 0 0 15px 0;
 }
 
@@ -1018,16 +1031,16 @@ h6 {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: rgb(15,15,15);
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #0563bb;
+  color: #ffffff;
   float: left;
   width: 44px;
   height: 44px;
-  background: #eef7ff;
+  background: rgb(15,15,15);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1040,14 +1053,14 @@ h6 {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  color: #fafdff;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #728394;
+  color: #f9fcff;
 }
 
 .contact .info .email,
@@ -1058,13 +1071,13 @@ h6 {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #0563bb;
-  color: #fff;
+  background: #ffffff;
+  color: #000000;
 }
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: #000000;
 }
 
 .contact .php-email-form .form-group {
@@ -1073,7 +1086,7 @@ h6 {
 
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
+  color: #000000;
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -1086,7 +1099,7 @@ h6 {
 
 .contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  color: #000000;
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -1095,7 +1108,7 @@ h6 {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: #000000;
   text-align: center;
   padding: 15px;
 }
@@ -1108,7 +1121,7 @@ h6 {
   height: 24px;
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
-  border-top-color: #eee;
+  border-top-color: #000000;
   animation: animate-loading 1s linear infinite;
 }
 
@@ -1128,16 +1141,16 @@ h6 {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #0563bb;
+  background: #ffffff;
   border: 0;
   padding: 10px 35px;
-  color: #fff;
+  color: #000000;
   transition: 0.4s;
   border-radius: 50px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #0678e3;
+  background: #fcfcfc;
 }
 
 @keyframes animate-loading {
@@ -1154,8 +1167,8 @@ h6 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
-  color: #45505b;
+  background: rgb(15,15,15);
+  color: #ffffff;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -1184,8 +1197,8 @@ h6 {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #0563bb;
-  color: #fff;
+  background: #ffffff;
+  color: #000000;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1198,7 +1211,7 @@ h6 {
 
 #footer .social-links a:hover {
   background: #0678e3;
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 }
 
